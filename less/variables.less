@@ -13,7 +13,7 @@
 @gray-light:             lighten(#4b0541, 60%);   // #999
 @gray-lighter:           lighten(#4b0541, 93.5%); // #eee
 
-@brand-primary:         #6e125d; // mauve
+@brand-primary:         #cb92bc;// #6e125d; // mauve
 @brand-success:         #5cb85c;
 @brand-info:            #5bc0de;
 @brand-warning:         #f2aa05; // orange
@@ -39,13 +39,13 @@
 //
 //## Font, line-height, and color for body text, headings, and more.
 
-@font-family-sans-serif:  "Helvetica Neue", Helvetica, Arial, sans-serif;
-@font-family-serif:       Georgia, "Times New Roman", Times, serif;
+@font-family-sans-serif:  "Quicksand", "Helvetica Neue", Helvetica, Arial, sans-serif;
+@font-family-serif:       "Quicksand", Georgia, "Times New Roman", Times, serif;
 //** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
 @font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace;
 @font-family-base:        @font-family-sans-serif;
 
-@font-size-base:          14px;
+@font-size-base:          16px;
 @font-size-large:         ceil((@font-size-base * 1.25)); // ~18px
 @font-size-small:         ceil((@font-size-base * 0.85)); // ~12px
 
@@ -343,8 +343,8 @@
 @navbar-collapse-max-height:       340px;
 
 @navbar-default-color:             #777;
-@navbar-default-bg:                #f8f8f8;
-@navbar-default-border:            darken(@navbar-default-bg, 6.5%);
+@navbar-default-bg:                #ffffff; //#f8f8f8;
+@navbar-default-border:            #ffffff; //darken(@navbar-default-bg, 6.5%);
 
 // Navbar links
 @navbar-default-link-color:                @brand-warning;
@@ -680,8 +680,8 @@
 //##
 
 @panel-bg:                    #fff;
-@panel-body-padding:          15px;
-@panel-heading-padding:       10px 15px;
+@panel-body-padding:          5px; // make things more compact ! (aalex)
+@panel-heading-padding:       5px 10px; // make things more compact ! (aalex)
 @panel-footer-padding:        @panel-heading-padding;
 @panel-border-radius:         @border-radius-base;
 
@@ -843,7 +843,7 @@
 //##
 
 //** Horizontal line color.
-@hr-border:                   @gray-lighter;
+@hr-border:                   @brand-warning;
 
 //** Horizontal offset for forms and lists.
 @component-offset-horizontal: 180px;
@@ -866,3 +866,49 @@ body {
     font-weight: 200;
     line-height: 30px;
 }
+
+#module_10 nav.navbar {
+    background-color: #ffffff;
+    //color: @brand-primary;
+}
+#module_10 nav.navbar ul.nav a {
+    //color: @brand-primary;
+}
+h1, h2, h3, h4, h5, h6 {
+    color: @brand-primary;
+    text-transform: lowercase;
+}
+h3.panel-title {
+    text-shadow: 1px 1px 2px @gray-lighter;
+}
+
+@heading-color: @brand-primary;
+
+// aalex custom things
+//#col1 {
+//    max-width: 500px;
+//}
+
+// #top_modules {
+//     text-align: center;
+// }
+
+// #module_2 {
+//     float: center;
+// }
+
+#module_7 ul.nav {
+    float: none;
+    display: inline-block;
+    text-align: center;
+}
+
+#module_7 ul.nav li {
+    display: inline-block;
+    text-align:center; 
+}
+
+#module_7 .navbar-collapse {
+    text-align: center;
+}
+
