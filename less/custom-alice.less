@@ -8,13 +8,35 @@
 .navbar-nav {
   float: center;
 }
-hr {
+
+// --------------------
+// Border for titles:
+h1, h2, h3, h4, h5, h6, hr {
     border-top: 2px dashed @hr-border;
 }
-
-.carousel-control, .carousel-indicators {
-    display: none;
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 2em;
+    padding-top: 1em;
 }
-.carousel-control.left, .carousel-control.right {
-        background-image: none
+h3.panel-title {
+    border-top: none;
+}
+
+// // Carousel:
+// .carousel-control, .carousel-indicators {
+//     display: none;
+// }
+// .carousel-control.left, .carousel-control.right {
+//         background-image: none
+// }
+// 
+
+nav li a {
+    padding: 10px 25px; // 25 instead of 15
+}
+
+.navbar-default .navbar-nav > .active > a,
+  .navbar-default .navbar-nav > .active > a:hover,
+  .navbar-default .navbar-nav > .active > a:focus {
+    background-color: white; // ?!?!
 }
